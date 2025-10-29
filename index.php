@@ -9,8 +9,32 @@
     <title>Primeira Página</title>
 </head>
 <body>
-    <h1>Bem-vindo ao meu site!</h1>
-    <p>Esta é a primeira página do meu site.</p>
-    <p>Olá, Mundo!</p>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.php">Início</a></li>
+                <li><a href="sobre.php">Sobre</a></li>
+                <li><a href="contato.php">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <aside>
+            <h2>Menu Lateral</h2>
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+            </ul>
+        </aside>
+        <section>
+            <h1>Bem-vindo ao meu site!</h1>
+            <p>Esta é a primeira página do meu site.</p>
+            <p>Olá, Mundo!</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Enrique. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
