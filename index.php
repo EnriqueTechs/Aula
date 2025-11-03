@@ -6,21 +6,22 @@
     <meta name="description" content="Esta é a primeira página do meu site." />
     <meta name="author" content="Enrique" />
     <meta name="keywords" content="primeira, página, site, Enrique" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Primeira Página</title>
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="index.php">Início</a></li>
-                <li><a href="sobre.php">Sobre</a></li>
-                <li><a href="contato.php">Contato</a></li>
+                <li><a class="btn active" href="index.php">Início</a></li>
+                <li><a class="btn" href="sobre.php">Sobre</a></li>
+                <li><a class="btn" href="contato.php">Contato</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <aside>
-            <h2>Menu Lateral</h2>
+            <h2><span>Menu</span> Lateral</h2>
             <ul>
                 <li><a href="#">Link 1</a></li>
                 <li><a href="#">Link 2</a></li>
