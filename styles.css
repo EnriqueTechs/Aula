@@ -7,21 +7,6 @@
             flex-direction: column;
             min-height: 100vh;
         }
-        /* Estilos para cabeçalho, rodapé do site */
-        header, footer {
-            background-color: #f8f8f8;
-            padding: 10px 20px;
-            text-align: center;
-        }
-        /* Estilos para navegação */
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin-right: 15px;
-        }
         /* Estilos para o conteúdo principal */
         main {
             flex: 1;
@@ -38,6 +23,36 @@
             flex: 1;
             padding: 15px;
         }
+        /* Estilos para texto verde */
+        span{
+            color: #0f0;
+        }
+        /* Estilos para imagens */
+        figure{
+            border: solid 3px #e52377;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            gap: 10px;}
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        /* Estilos para cabeçalho, rodapé do site */
+        header, footer {
+            background-color: #f8f8f8;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        /* Estilos para navegação */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
         /* Estilos para a classe de botões */
         .btn {
             text-decoration: none;
@@ -53,7 +68,4 @@
         }
         .btn.active {
             background-color: #28a745;
-        }
-        span{
-            color: #0f0;
         }
