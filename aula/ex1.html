@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form  name="formulario1" id="form1">
+        <input name="texto1" id="texto1" type="text">
+        <button type="button" name="button1" id="button1" value="submit1"> click here </button>
+    </form>
+    <br />
+    <form  name="formulario2" id="form2">
+        <input name="texto2" id="texto2" type="text">
+        <button type="button" name="button2" id="button2" value="submit2"> click here </button>
+    </form>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", ()=> {
+            const btn1 = document.getElementById("button1");
+            const btn2 = document.getElementById("button2");
+            btn1.addEventListener("click",(e)=>{
+                alert("Botão 1 clicado!");
+                const dados = {
+                    texto: document.getElementById("texto1").value
+                };
+
+                // Criação do HTTPRequest
+                const xhr = new XMLHttpRequest();
+                xhr.open("POST", "ex1.php", true);
+                xhr.setRequestHeader("Content-Type", "application/json");
+
+                // Resposta do servidor
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState === 4 && xhr.status === 200) {
+                        const resposta = JSON.parse(xhr.responseText);
+                        console.log("Resposta do PHP:", resposta);
+                        alert("Nome recebido: " + resposta.texto);
+                    }
+                };
+
+                // Envio do JSON
+                xhr.send(JSON.stringify(dados));
+            });
+            btn2.addEventListener("click",(e)=>{
+                alert("Botão 2 clicado!");
+            });
+        })
+    </script>
+</body>
+</html>
